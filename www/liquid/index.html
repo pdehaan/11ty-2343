@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>liquidjs example (eleventy-plugin-footnotes)</title>
+  </head>
+  <body>
+    <main id="main">
+      <h1>liquidjs example (eleventy-plugin-footnotes)</h1>
+
+      <p>
+        Something about
+        <a
+          class="Footnotes__ref"
+          href="#Eleventy-note"
+          id="Eleventy-ref"
+          aria-describedby="footnotes-label"
+          role="doc-noteref"
+          >Eleventy</a
+        >
+        that deserves a footnote explaining what they are.
+      </p>
+      <p>
+        And it was created by
+        <a
+          class="Footnotes__ref"
+          href="#@zachleat-note"
+          id="@zachleat-ref"
+          aria-describedby="footnotes-label"
+          role="doc-noteref"
+          >Zach Leatherman</a
+        >.
+      </p>
+
+      <aside data-testid="footnotes">
+        <footer role="doc-endnotes" class="Footnotes">
+          <h2 id="footnotes-label" class="Footnotes__title">Footnotes</h2>
+          <ol class="Footnotes__list">
+            <li
+              id="Eleventy-note"
+              class="Footnotes__list-item"
+              role="doc-endnote"
+            >
+              <a href="https://11ty.dev/">Eleventy</a> is pretty neat. Try it
+              out today!
+              <a
+                class="Footnotes__back-link"
+                href="#Eleventy-ref"
+                aria-label="Back to reference 1"
+                role="doc-backlink"
+                >↩</a
+              >
+            </li>
+            <li
+              id="@zachleat-note"
+              class="Footnotes__list-item"
+              role="doc-endnote"
+            >
+              <a href="https://twitter.com/zachleat">Zach on Twitter</a>
+              <a
+                class="Footnotes__back-link"
+                href="#@zachleat-ref"
+                aria-label="Back to reference 2"
+                role="doc-backlink"
+                >↩</a
+              >
+            </li>
+          </ol>
+        </footer>
+      </aside>
+    </main>
+  </body>
+</html>

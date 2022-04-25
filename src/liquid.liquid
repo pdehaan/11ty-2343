@@ -1,0 +1,15 @@
+---
+title: liquidjs example (eleventy-plugin-footnotes)
+---
+
+{%- assign eleventy_footnote = "[Eleventy](https://11ty.dev/) is pretty neat. Try it out today!" | markdown -%}
+{%- assign zachleat_footnote = "[Zach on Twitter](https://twitter.com/zachleat)" | markdown -%}
+
+<h1>{{ title }}</h1>
+
+<p>Something about {% footnoteref "Eleventy", eleventy_footnote %}Eleventy{% endfootnoteref %} that deserves a footnote explaining what they are.</p>
+<p>And it was created by {% footnoteref "@zachleat", zachleat_footnote %}Zach Leatherman{% endfootnoteref %}.</p>
+
+<aside data-testid="footnotes">
+  {% footnotes %}
+</aside>

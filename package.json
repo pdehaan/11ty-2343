@@ -1,0 +1,19 @@
+{
+  "name": "11ty-2343",
+  "version": "1.0.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "format": "npx prettier www --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "license": "MPL-2.0",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "eleventy-plugin-footnotes": "^0.10.0"
+  }
+}
