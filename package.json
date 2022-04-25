@@ -1,19 +1,27 @@
 {
   "name": "11ty-2343",
-  "version": "1.0.0",
-  "main": ".eleventy.js",
-  "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
-    "format": "npx prettier www --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Peter deHaan <peter@deseloper.com>",
-  "license": "MPL-2.0",
   "description": "",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-2343/issues"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "eleventy-plugin-footnotes": "^0.10.0"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-2343#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-2343.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "format": "npx prettier www --write",
+    "serve": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
